@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sub-o-matic</title>
-<meta name="description" content="Sub-o-matic sube los crudos de cada tarjeta al trabajo correcto en el Drive de Re!, los verifica y avisa a los editores.">
+<meta name="description" content="Ponés la tarjeta y Sub-o-matic sube cada archivo a la carpeta del trabajo que corresponde en el Drive de Re!, chequea que haya llegado bien y les avisa a los editores.">
 <link rel="icon" href="img/icon-64.png">
 <style>
 /* The app's own colors (src/renderer/src/styles.css, dark). */
@@ -245,7 +245,7 @@ footer { border-top: 1px solid var(--border); padding: 28px 0 40px; color: var(-
 <header class="top">
   <div class="wrap">
     <a class="brand" href="#"><img src="img/logo.png" alt="">Sub-o-matic</a>
-    <nav><a href="#funciones">Qué hace</a><a href="#recorrido">Recorrido</a><a href="#instalar">Instalar</a></nav>
+    <nav><a href="#funciones">Qué hace</a><a href="#recorrido">Paso a paso</a><a href="#instalar">Instalar</a></nav>
     <a class="btn primary" href="#instalar">Descargar</a>
   </div>
 </header>
@@ -255,9 +255,9 @@ footer { border-top: 1px solid var(--border); padding: 28px 0 40px; color: var(-
   <div class="wrap">
     <img src="img/logo.png" alt="Re!">
     <h1>Sub-o-matic</h1>
-    <p>Insertás la tarjeta. Sub-o-matic sube cada archivo al trabajo correcto, lo verifica y avisa a los editores.</p>
+    <p>Ponés la tarjeta y listo: Sub-o-matic sube cada archivo a la carpeta del trabajo que corresponde, chequea que haya llegado bien y les avisa a los editores.</p>
     <div class="row">
-      <a class="btn primary" href="#funciones">Ver cómo funciona</a>
+      <a class="btn primary" href="#funciones">Mirá cómo funciona</a>
       <a class="btn" href="#instalar">Descargar</a>
     </div>
     <p class="scroll">Para los productores de Re! · Windows</p>
@@ -281,9 +281,9 @@ footer { border-top: 1px solid var(--border); padding: 28px 0 40px; color: var(-
 <!-- 3 · recorrido -->
 <section id="recorrido">
   <div class="wrap">
-    <p class="kicker">El recorrido completo · 75 segundos</p>
-    <h2 style="font-size: clamp(26px, 3.4vw, 36px); margin-bottom: 22px;">De la tarjeta a los editores, sin pasos manuales</h2>
-    <div class="stage" id="stage" data-scene="0" aria-label="Animación del recorrido">
+    <p class="kicker">Paso a paso · 75 segundos</p>
+    <h2 style="font-size: clamp(26px, 3.4vw, 36px); margin-bottom: 22px;">De la tarjeta a los editores, sin hacer nada a mano</h2>
+    <div class="stage" id="stage" data-scene="0" aria-label="Animación paso a paso">
       <div class="st-win">
         <div class="caption" aria-hidden="true"></div>
         <div class="screen">
@@ -308,7 +308,7 @@ footer { border-top: 1px solid var(--border); padding: 28px 0 40px; color: var(-
       <div class="st-right" id="right">
         <div class="chip" style="top: 0; --c: 0"><b>Gorriti 4815, 3° B</b><span>Hoy 10:00–11:30 · FOTO, VIDEO, DRONE, REEL, TH</span></div>
         <div class="chip" style="top: 8cqw; --c: 1"><b>Av. del Libertador 9020</b><span>Hoy 12:30–13:30 · FOTO, TOUR</span></div>
-        <div class="chip hold" style="top: 16cqw; --c: 2"><b>Thames 1550</b><span>Hoy 15:00 · espera el checkout</span></div>
+        <div class="chip hold" style="top: 16cqw; --c: 2"><b>Thames 1550</b><span>Hoy 15:00 · falta el checkout</span></div>
         <div class="chip pc" style="top: 24cqw; --c: 3"><b>Por clasificar</b><span>No coincide con ningún trabajo · 08:10</span></div>
         <div class="lane" style="top: 0; --l: 0"><b>FOTO</b>Sony A7 III<span>186 archivos</span></div>
         <div class="lane" style="top: 6.2cqw; --l: 1"><b>VIDEO</b>iPhone<span>8 archivos</span></div>
@@ -325,22 +325,22 @@ footer { border-top: 1px solid var(--border); padding: 28px 0 40px; color: var(-
       </div>
       <div id="chunks"></div>
       <div class="wifi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M2 9a15 15 0 0 1 20 0M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0"/><circle cx="12" cy="19.5" r=".8" fill="currentColor"/><path class="x" d="M4 4l16 16"/></svg>
-        <span class="w-on">Conectado</span><span class="w-off">Sin conexión: espera…</span></div>
+        <span class="w-on">Conectado</span><span class="w-off">Sin conexión: esperando…</span></div>
       <div class="editor"><div class="av">M</div><div>Martina, editora<small>«Gorriti 4815: crudos de FOTO subidos»</small></div></div>
       <svg class="mail" viewBox="0 0 40 28" aria-hidden="true"><rect x="1" y="1" width="38" height="26" rx="3" fill="#ecebe6"/><path d="M2 3l18 13L38 3" fill="none" stroke="#378add" stroke-width="2.5"/></svg>
       <svg class="cursor c-reel" viewBox="0 0 24 24"><path d="M4 2l15 11-6.5 1.2L16 21l-3 1.4-3.6-7L4 19Z" fill="#fff" stroke="#000" stroke-width="1.2"/></svg>
       <svg class="cursor c-subir" viewBox="0 0 24 24"><path d="M4 2l15 11-6.5 1.2L16 21l-3 1.4-3.6-7L4 19Z" fill="#fff" stroke="#000" stroke-width="1.2"/></svg>
       <div class="ring r-reel" style="left: 44.1cqw; top: 42cqw"></div>
       <div class="ring r-subir" style="left: 41.9cqw; top: 40.9cqw"></div>
-      <div class="end"><div><img src="img/logo.png" alt=""><h3>Tarjeta → trabajo → Drive → editores</h3><p>Sin pasos manuales.</p></div></div>
+      <div class="end"><div><img src="img/logo.png" alt=""><h3>Tarjeta → trabajo → Drive → editores</h3><p>Sin hacer nada a mano.</p></div></div>
       <div class="st-say" id="say"></div>
     </div>
     <div class="player">
-      <button id="play" class="primary">▶ Reproducir</button>
+      <button id="play" class="primary">▶ Ver</button>
       <div class="segs" id="segs"></div>
       <span class="clock" id="clock">0:00 / 1:15</span>
     </div>
-    <p class="shot-note">Las pantallas son las de la app. Los trabajos, nombres y fotos son de ejemplo.</p>
+    <p class="shot-note">Las pantallas son las de la app. Los trabajos, los nombres y las fotos son inventados.</p>
   </div>
 </section>
 
@@ -349,26 +349,26 @@ footer { border-top: 1px solid var(--border); padding: 28px 0 40px; color: var(-
   <div class="wrap install">
     <div>
       <p class="kicker">Instalar</p>
-      <h2 style="font-size: clamp(26px, 3.4vw, 36px);">Instalala una vez, después se actualiza sola</h2>
+      <h2 style="font-size: clamp(26px, 3.4vw, 36px);">La instalás una vez y después se actualiza sola</h2>
       <div class="dl">
         <a class="btn primary" id="dl" href="https://github.com/maxpiens82/sub-o-matic-releases/releases/latest">⬇ Descargar para Windows</a>
         <span class="faint" id="dl-info">Última versión</span>
       </div>
       <ol class="steps">
-        <li><b>Abrí el instalador</b> que bajaste. Se instala solo, sin pedir permisos de administrador.</li>
-        <li>Si Windows muestra <b>«Windows protegió tu PC»</b>, tocá <b>Más información</b> y después <b>Ejecutar de todas formas</b>. Pasa solo la primera vez.</li>
-        <li><b>Ingresá con tu cuenta de Google de Re!.</b> Hace falta estar habilitado en el sistema.</li>
-        <li>Listo: queda en la bandeja, al lado del reloj, y arranca con Windows.</li>
+        <li><b>Abrí el instalador</b> que bajaste. Se instala solo y no pide permisos de administrador.</li>
+        <li>Si Windows te muestra <b>«Windows protegió tu PC»</b>, tocá <b>Más información</b> y después <b>Ejecutar de todas formas</b>. Pasa una sola vez.</li>
+        <li><b>Entrá con tu cuenta de Google de Re!.</b> Tenés que estar dado de alta en el sistema.</li>
+        <li>Listo: queda en la bandeja, al lado del reloj, y arranca solo cuando prendés la PC.</li>
       </ol>
       <div class="box" style="margin-top: 8px;">
         <h3>Actualizaciones</h3>
-        <p class="muted">Sub-o-matic busca versiones nuevas sola. Las baja en segundo plano y se instala cuando no hay subidas en curso y la ventana está cerrada; vuelve a la bandeja como estaba. Nunca interrumpe una subida. En Ajustes ves la versión que tenés.</p>
+        <p class="muted">Sub-o-matic se fija solo si hay versiones nuevas. Las baja sin molestar y se actualiza cuando no estás subiendo nada y tenés la ventana cerrada; después vuelve a la bandeja como estaba. Nunca corta una subida. En Ajustes ves qué versión tenés.</p>
       </div>
     </div>
     <div class="box">
       <h3>Novedades <span class="faint" id="rel-name" style="font-weight: 400;"></span></h3>
       <p class="notes" id="rel-notes">Cargando…</p>
-      <p style="margin-top: 14px;"><a href="https://github.com/maxpiens82/sub-o-matic-releases/releases">Todas las versiones</a></p>
+      <p style="margin-top: 14px;"><a href="https://github.com/maxpiens82/sub-o-matic-releases/releases">Ver todas las versiones</a></p>
     </div>
   </div>
 </section>
@@ -382,47 +382,47 @@ document.querySelectorAll('.caption').forEach(c => { c.innerHTML = CAPTION; });
 
 // ---- 2 · funciones ----
 const SLIDES = [
-  { t: 'Tarjeta, carpeta o arrastrar',
-    li: ['<b>Poné la tarjeta</b>: Sub-o-matic la detecta sola y lee los archivos en segundos, sin copiar nada todavía.',
-         '<b>Carpetas vigiladas</b>: elegí en Ajustes la carpeta donde copiás lo del iPhone. Lo nuevo que aparezca ahí se lee solo; lo que ya estaba se ignora.',
-         'También podés <b>arrastrar archivos</b> a la ventana.'],
-    q: 'Funciona con cámaras, drones, Insta360 y el iPhone.',
+  { t: 'Tarjeta, carpeta o arrastrando',
+    li: ['<b>Ponés la tarjeta</b> y Sub-o-matic se da cuenta solo. En segundos ya sabe qué hay adentro, sin copiar nada todavía.',
+         '<b>Carpetas vigiladas</b>: en Ajustes elegís la carpeta donde bajás lo del iPhone. Todo lo nuevo que caiga ahí lo agarra solo; lo que ya estaba, lo deja.',
+         'Y si no, <b>arrastrás los archivos</b> a la ventana y listo.'],
+    q: 'Anda con las cámaras, los drones, la Insta360 y el iPhone.',
     v: [['Tarjeta detectada', 'home-reading'], ['Carpetas vigiladas (Ajustes)', 'settings'], ['Pantalla principal', 'home']] },
-  { t: 'El trabajo correcto, solo',
-    li: ['Mira <b>la hora de cada foto y video</b> y la cruza con tus trabajos.',
-         'Una tarjeta con varios trabajos del día se reparte sola.',
-         'Si una cámara tiene <b>la hora mal</b>, te pregunta antes de corregirla.'],
-    q: 'Mira la hora de cada foto y video y la cruza con tus trabajos.',
+  { t: 'Cada cosa a su trabajo',
+    li: ['Se fija <b>a qué hora sacaste cada foto y cada video</b> y lo cruza con tus trabajos.',
+         'Si en una tarjeta tenés varios trabajos del día, los separa solo.',
+         'Si una cámara tiene <b>la hora mal</b>, te pregunta antes de tocar nada.'],
+    q: 'Vos no tenés que ordenar nada: lo ordena la hora.',
     v: [['Resumen de una tarjeta', 'summary-card', true], ['Hora mal y equipo nuevo', 'summary-questions']] },
   { t: 'Cada archivo a su servicio',
-    li: ['Fotos a <b>FOTO</b>, drone a <b>DRONE</b>, Insta360 a <b>TOUR</b>, FPV a <b>FPV</b>.',
-         'Los <b>clips verticales</b> los elegís vos: tocá <b>Ver</b>, miralo y elegí <b>REEL</b> o <b>TH</b> (o las teclas R y T).',
-         '<b>Equipo nuevo</b>: te pregunta qué es y lo recuerda para todas las PCs.'],
-    q: 'Los verticales los elegís vos, mirándolos.',
+    li: ['Las fotos van a <b>FOTO</b>, el drone a <b>DRONE</b>, la Insta360 a <b>TOUR</b> y el FPV a <b>FPV</b>.',
+         'Los <b>clips verticales</b> los decidís vos: tocás <b>Ver</b>, lo mirás y elegís <b>REEL</b> o <b>TH</b> (o apretás R o T).',
+         'Si aparece un <b>equipo nuevo</b>, te pregunta qué es y se lo acuerda en todas las PCs.'],
+    q: 'Los verticales los elegís mirándolos, sin abrir nada aparte.',
     v: [['Vista previa: REEL o TH', 'viewer-reel'], ['Verticales elegidos', 'summary-ready', true]] },
-  { t: 'Ves todo antes de subir',
-    li: ['Un <b>resumen por trabajo</b>: qué sube, a qué servicio, cuánto pesa. Nada sube sin tu OK.',
-         'Si falta el <b>checkout</b>, esos archivos esperan y suben solos cuando lo hacés.',
-         'Lo de otro productor no se sube; si hace falta, <b>Subir igual</b> (sin marcar como subido).'],
-    q: 'Ves todo antes de confirmar.',
+  { t: 'Antes de subir, ves todo',
+    li: ['Un <b>resumen por trabajo</b>: qué sube, a qué servicio y cuánto pesa. No sube nada hasta que vos digas.',
+         'Si todavía no hiciste el <b>checkout</b>, esos archivos quedan esperando y suben solos cuando lo hacés.',
+         'Lo que le toca a otro productor no se sube. Si hace falta igual, está <b>Subir igual</b> (no lo marca como subido).'],
+    q: 'Nada sube sin tu OK.',
     v: [['Lo que llegó de la carpeta del iPhone', 'summary-folder'], ['Subir igual', 'summary-override', false, true]] },
   { t: 'Por clasificar, con vista previa',
-    li: ['Lo que no coincide con ningún trabajo (sin fecha, de WhatsApp, de otro día) <b>no se pierde</b>: espera en Por clasificar.',
-         '<b>Mirá cada foto o video</b> sin salir de la app, con flechas para pasar.',
-         '<b>Asignalo a un trabajo</b> y sigue el camino normal.'],
-    q: 'Lo que no coincide no se pierde.',
+    li: ['Lo que no coincide con ningún trabajo (sin fecha, de WhatsApp, de otro día) <b>no se pierde</b>: queda en Por clasificar.',
+         '<b>Mirás cada foto o video</b> ahí mismo y pasás de uno a otro con las flechas.',
+         'Lo <b>asignás a un trabajo</b> y sigue el camino de siempre.'],
+    q: 'Lo que no encaja queda guardado hasta que lo ubiques.',
     v: [['Por clasificar', 'porclasificar'], ['Vista previa de una foto', 'porclasificar-viewer']] },
   { t: 'Subida segura',
-    li: ['Primero <b>copia la tarjeta a la PC</b>, servicio por servicio; cuando termina, <b>ya podés sacarla</b>.',
-         'Cada archivo se <b>verifica en Drive con su huella</b> (MD5): si no coincide, se vuelve a subir.',
-         'Si se corta internet, <b>sigue sola</b> desde donde quedó. Nunca sube dos veces lo mismo.'],
-    q: 'Cada archivo se verifica en Drive. Si se corta internet, sigue sola.',
+    li: ['Primero <b>copia la tarjeta a la PC</b>, servicio por servicio. Cuando termina, <b>ya la podés sacar</b>.',
+         'Cada archivo se <b>chequea en Drive con su huella digital</b> (MD5). Si no coincide, lo vuelve a subir.',
+         'Si se corta internet, <b>retoma solo</b> desde donde quedó. Nunca sube dos veces lo mismo.'],
+    q: 'Si algo sale mal, se da cuenta y lo arregla solo.',
     v: [['Copiando y subiendo', 'uploading-copy'], ['Subiendo', 'uploading'], ['Desde la pantalla principal', 'home-uploading']] },
-  { t: 'Listo, y los editores avisados',
-    li: ['Cuando un servicio termina, lo <b>marca como subido</b> y <b>avisa a los editores</b> por mail.',
-         'Te avisa con <b>notificaciones de Windows</b>; podés cerrar la ventana y sigue en la bandeja.',
-         'Un toque para <b>abrir la carpeta en Drive</b>.'],
-    q: 'Cuando termina, marca el servicio y avisa a los editores.',
+  { t: 'Listo, y los editores ya saben',
+    li: ['Cuando termina un servicio, lo <b>marca como subido</b> y les <b>avisa a los editores</b> por mail.',
+         'Te avisa con <b>notificaciones de Windows</b>. Podés cerrar la ventana: sigue trabajando desde la bandeja.',
+         'Con un clic <b>abrís la carpeta en Drive</b>.'],
+    q: 'Terminás de subir y el editor ya está enterado.',
     v: [['Listo', 'done']] }
 ];
 const deck = document.getElementById('deck'), dots = document.getElementById('dots'), count = document.getElementById('count');
@@ -442,7 +442,7 @@ function render(i, view = 0) {
     <div class="slide-enter" style="animation-delay: .08s">
       ${detail ? `<div class="detail"><img src="img/${name}.webp" alt="${label}"></div>` : frame(name, tall)}
       ${s.v.length > 1 ? `<div class="views">${s.v.map((v, k) => `<button aria-pressed="${k === view}" data-view="${k}">${v[0]}</button>`).join('')}</div>` : ''}
-      <p class="shot-note">${tall ? 'Deslizá dentro de la pantalla para ver todo. ' : ''}Pantalla real de la app, con un trabajo de ejemplo.</p>
+      <p class="shot-note">${tall ? 'Deslizá dentro de la pantalla para verla entera. ' : ''}Pantalla real de la app, con un trabajo de ejemplo.</p>
     </div>`;
   deck.querySelectorAll('[data-view]').forEach(b => b.onclick = () => render(i, Number(b.dataset.view)));
   dots.innerHTML = SLIDES.map((_, k) => `<button role="tab" aria-label="${SLIDES[k].t}" aria-current="${k === i}" data-k="${k}"></button>`).join('');
@@ -450,7 +450,7 @@ function render(i, view = 0) {
   count.textContent = '';
   document.getElementById('prev').disabled = i === 0;
   const next = document.getElementById('next');
-  next.textContent = i === SLIDES.length - 1 ? 'Ver el recorrido completo →' : 'Siguiente →';
+  next.textContent = i === SLIDES.length - 1 ? 'Ver el paso a paso →' : 'Siguiente →';
 }
 function go(i) { current = Math.max(0, Math.min(SLIDES.length - 1, i)); render(current); }
 document.getElementById('prev').onclick = () => go(current - 1);
@@ -478,15 +478,15 @@ document.getElementById('tiles').innerHTML = FILES.map(([t, k, job, v], i) => {
 document.getElementById('chunks').innerHTML = Array.from({ length: 6 }, (_, i) => `<div class="chunk" style="--i:${i};--f:${i % 4}"></div>`).join('');
 
 const SCENES = [
-  [6, 'Ponés la tarjeta. Sub-o-matic la detecta sola.'],
-  [8, 'Lee la hora de cada foto y video, en segundos, sin copiar nada todavía.'],
-  [10, 'Cruza cada archivo con tus trabajos del día. Lo que no coincide va a Por clasificar.'],
-  [10, 'Cada archivo va a su servicio. Los clips verticales los mirás y elegís: REEL o TH.'],
-  [6, 'Revisás el resumen y tocás Subir.'],
-  [8, 'Primero copia la tarjeta a la PC. Cuando termina, ya podés sacarla.'],
-  [12, 'Sube a la carpeta CRUDOS de cada servicio y verifica cada archivo en Drive.'],
-  [7, '¿Se cortó internet? Espera y sigue sola, desde donde quedó.'],
-  [5, 'Marca el servicio como subido y avisa a los editores.'],
+  [6, 'Ponés la tarjeta. Sub-o-matic se da cuenta solo.'],
+  [8, 'Lee la hora de cada foto y cada video en segundos, sin copiar nada todavía.'],
+  [10, 'Cruza cada archivo con tus trabajos del día. Lo que no encaja va a Por clasificar.'],
+  [10, 'Cada archivo va a su servicio. Los verticales los mirás y elegís: REEL o TH.'],
+  [6, 'Revisás el resumen y le das a Subir.'],
+  [8, 'Primero copia la tarjeta a la PC. Cuando termina, ya la podés sacar.'],
+  [12, 'Sube cada servicio a su carpeta de CRUDOS y chequea en Drive que cada archivo haya llegado bien.'],
+  [7, '¿Se cortó internet? Espera y retoma solo, desde donde quedó.'],
+  [5, 'Marca el servicio como subido y les avisa a los editores.'],
   [3, '']
 ];
 const TOTAL = SCENES.reduce((s, x) => s + x[0], 0);
@@ -525,14 +525,14 @@ const player = {
   play() {
     if (this.t >= TOTAL) this.seek(0);
     if (this.scene < 0) this.setScene(0);
-    this.playing = true; stage.classList.remove('paused'); playBtn.textContent = '❚❚ Pausar';
+    this.playing = true; stage.classList.remove('paused'); playBtn.textContent = '❚❚ Pausa';
     this.last = performance.now(); requestAnimationFrame(() => this.tick());
   },
   pause() { this.playing = false; stage.classList.add('paused'); playBtn.textContent = '▶ Seguir'; },
   tick() {
     if (!this.playing) return;
     const now = performance.now(); this.t += (now - this.last) / 1000; this.last = now;
-    if (this.t >= TOTAL) { this.t = TOTAL; this.draw(); this.playing = false; playBtn.textContent = '↺ Repetir'; return; }
+    if (this.t >= TOTAL) { this.t = TOTAL; this.draw(); this.playing = false; playBtn.textContent = '↺ Ver de nuevo'; return; }
     const i = starts.findLastIndex(s => s <= this.t);
     if (i !== this.scene) { stage.querySelectorAll('*').forEach(el => { el.style.animationDelay = ''; }); this.setScene(i); }
     this.draw(); requestAnimationFrame(() => this.tick());
@@ -562,7 +562,7 @@ fetch('https://api.github.com/repos/maxpiens82/sub-o-matic-releases/releases/lat
     document.getElementById('rel-name').textContent = `· ${rel.name}`;
     document.getElementById('rel-notes').textContent = (rel.body || '').replace(/\r/g, '').trim() || 'Sin notas.';
   })
-  .catch(() => { document.getElementById('rel-notes').textContent = 'No se pudo leer la última versión. Abrí «Todas las versiones».'; });
+  .catch(() => { document.getElementById('rel-notes').textContent = 'No pude leer la última versión. Fijate en «Ver todas las versiones».'; });
 </script>
 </body>
 </html>
