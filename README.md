@@ -1,5 +1,7 @@
 # Sub-o-matic: instaladores
 
+**Cómo funciona, con capturas y un recorrido animado:** https://maxpiens82.github.io/sub-o-matic-releases/
+
 Acá están solo los instaladores de Sub-o-matic, la app de Re! para subir los crudos de las
 tarjetas al Drive. El código no está en este repositorio.
 
